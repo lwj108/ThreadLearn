@@ -13,7 +13,6 @@ public class HashMapMultiThread {
 
     public static class AddThread implements Runnable{
         int start = 0;
-
         public AddThread(int start){
             this.start=start;
         }
