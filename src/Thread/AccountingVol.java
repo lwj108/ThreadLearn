@@ -1,3 +1,5 @@
+package Thread;
+
 /**
  * 多线程写入冲突,需保证同步在t1写入时t2是不能写不能读;使用synchronized实现
  * Created by 李维俊 on 2018/5/14.

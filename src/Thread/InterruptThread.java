@@ -1,3 +1,5 @@
+package Thread;
+
 /**
  * Created by 李维俊 on 2018/5/9.
  */

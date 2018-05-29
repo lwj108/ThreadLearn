@@ -1,3 +1,5 @@
+package Thread;
+
 /**
  * Runnable可以避免Thread方式由于单继承特性带来的缺陷,
  * 可以被多个线程共享,适用于多个线程处理统一资源的情况
@@ -9,10 +11,10 @@ class MyThread2 implements Runnable{
 
     @Override
     public void run() {
-        while (ticketCount>0){
+        synchronized (this){while (ticketCount>0){
             ticketCount--;
             System.out.println(Thread.currentThread().getName() + "卖出一张票,还剩票数:" + ticketCount);
-        }
+        }}
     }
 }
 
